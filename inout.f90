@@ -2549,7 +2549,7 @@
       Q10WTABLE(1) = Q10W
     CALL READARRAY(UFILE,5,NOWQDATES,DATESRWQ,Q10WTABLE)
 
-      IF (EFFY.EQ.0.0) &
+      IF (abs(EFFY - 0.0) < 0.00001) &
        CALL SUBERROR('WARNING: WOODY GROWTH RESP NOT CALCULATED', &
        IWARN,IOERROR)
       IF ((MODELRW.NE.1).AND.RM.EQ.0.0.AND.RMA.EQ.0.0) THEN
@@ -2633,7 +2633,7 @@
       RTEMPB = 0.0     ! Default temp at which maint resp specified
       Q10B = 0.0       ! Missing value - will cause error if RM spec
       READ (UFILE,BRESP,IOSTAT = IOERROR)
-      IF (RMB.EQ.0.0) THEN
+      IF (abs(RMB - 0.0) < 0.00001) THEN
         CALL SUBERROR('WARNING: BRANCH MAINT RESP NOT CALCULATED', &
         IWARN,IOERROR)
       ELSE IF (abs(Q10B - 0.0) < 0.00001) THEN
