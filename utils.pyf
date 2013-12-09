@@ -1,0 +1,127 @@
+!    -*- f90 -*-
+! Note: the context of this file is case sensitive.
+
+python module utils ! in 
+    interface  ! in :utils
+        function idate50(strdate) ! in :utils:utils.f90
+            character*8 :: strdate
+            integer :: idate50
+        end function idate50
+        function idateyr(strdate,iyear) ! in :utils:utils.f90
+            character*8 :: strdate
+            integer :: iyear
+            integer :: idateyr
+        end function idateyr
+        function month(idate50) ! in :utils:utils.f90
+            integer :: idate50
+            integer :: month
+        end function month
+        function jdate(idate50) ! in :utils:utils.f90
+            integer :: idate50
+            integer :: jdate
+        end function jdate
+        subroutine suberror(message,iflag,ioerror) ! in :utils:utils.f90
+            use maestcom
+            character*(*) :: message
+            integer :: iflag
+            integer :: ioerror
+        end subroutine suberror
+        function beta(bc1,bc2,bc3,bc4,rp) ! in :utils:utils.f90
+            real :: bc1
+            real :: bc2
+            real :: bc3
+            real :: bc4
+            real :: rp
+            real :: beta
+        end function beta
+        function quadm(a,b,c,iqerror) ! in :utils:utils.f90
+            use maestcom
+            real :: a
+            real :: b
+            real :: c
+            integer :: iqerror
+            real :: quadm
+        end function quadm
+        function quadp(a,b,c,iqerror) ! in :utils:utils.f90
+            use maestcom
+            real :: a
+            real :: b
+            real :: c
+            integer :: iqerror
+            real :: quadp
+        end function quadp
+        function averageval(arr,numval) ! in :utils:utils.f90
+            real dimension(10000) :: arr
+            integer :: numval
+            real :: averageval
+        end function averageval
+        function night(zen,par) ! in :utils:utils.f90
+            real :: zen
+            real :: par
+            integer :: night
+        end function night
+        function satur(tac) ! in :utils:utils.f90
+            real :: tac
+            real :: satur
+        end function satur
+        function tk(tcelsius) ! in :utils:utils.f90
+            use maestcom
+            real :: tcelsius
+            real :: tk
+        end function tk
+        function stdev(arr,n) ! in :utils:utils.f90
+            real dimension(n) :: arr
+            integer, optional,check(len(arr)>=n),depend(arr) :: n=len(arr)
+            real :: stdev
+        end function stdev
+        function divfournear(num) ! in :utils:utils.f90
+            integer :: num
+            integer :: divfournear
+        end function divfournear
+        module metcom ! in :utils:metcom.f90
+            integer, parameter,optional :: mhswc=19
+            integer, parameter,optional :: mdwind=2
+            integer, parameter,optional :: mdswc=13
+            integer, parameter,optional :: mhtair=4
+            integer, parameter,optional :: mhswp=18
+            integer, parameter,optional :: mdtmax=3
+            integer, parameter,optional :: mdswp=12
+            integer, parameter,optional :: mhtime=2
+            integer, parameter,optional :: mdsi=6
+            integer, parameter,optional :: mhtdew=14
+            integer, parameter,optional :: mhca=10
+            integer, parameter,optional :: content=3
+            integer, parameter,optional :: mdsmd=11
+            integer, parameter,optional :: mhmfd=12
+            integer, parameter,optional :: deficit=2
+            integer, parameter,optional :: mdtmin=4
+            integer, parameter,optional :: mhtsoil=5
+            integer, parameter,optional :: mdppt=10
+            integer, parameter,optional :: mdfbeam=7
+            integer, parameter,optional :: missing=-1
+            integer, parameter,optional :: mhet=20
+            integer, parameter,optional :: mdpar=5
+            integer, parameter,optional :: mhrhp=11
+            integer, parameter,optional :: mhdate=1
+            integer, parameter,optional :: mhrh=6
+            integer, parameter,optional :: mhpress=13
+            integer, parameter,optional :: mdet=14
+            integer, parameter,optional :: mhppt=16
+            integer, parameter,optional :: mhpar=8
+            integer, parameter,optional :: potential=1
+            integer, parameter,optional :: mhvpd=7
+            integer, parameter,optional :: mhsmd=17
+            integer, parameter,optional :: mhfbeam=9
+            integer, parameter,optional :: mddate=1
+            integer, parameter,optional :: mhwind=3
+            integer, parameter,optional :: mhrad=15
+            integer, parameter,optional :: none=0
+            integer, parameter,optional :: simulated=4
+            integer, parameter,optional :: mdca=8
+            integer, parameter,optional :: mdpress=9
+        end module metcom
+    end interface 
+end python module utils
+
+! This file was auto-generated with f2py (version:2).
+! See http://cens.ioc.ee/projects/f2py2e/

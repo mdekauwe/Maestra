@@ -1,0 +1,128 @@
+!    -*- f90 -*-
+! Note: the context of this file is case sensitive.
+
+python module maestcom ! in 
+    interface  ! in :maestcom
+        module maestcom ! in :maestcom:maestcom.f90
+            integer, parameter,optional :: nmax=4
+            real, parameter,optional :: emsoil=0.95
+            integer, parameter,optional :: udayhdr=35
+            integer, parameter,optional :: maxhrs=96
+            integer, parameter,optional :: utrees=2
+            integer, parameter,optional :: utest=7
+            integer, parameter,optional :: uthr=17
+            integer, parameter,optional :: uphy=4
+            real, parameter,optional :: gsvgsc=1.57
+            real, parameter,optional :: cperdw=0.5
+            integer, parameter,optional :: maxang=9
+            integer, parameter,optional :: ututd=37
+            real, parameter,optional :: tcquartz=7.7
+            real, parameter,optional :: h2ovw=1.805e-05
+            integer, parameter,optional :: uwatbal=27
+            integer, parameter,optional :: uhrlyhdr=38
+            integer, parameter,optional :: maxsoillay=100
+            integer, parameter,optional :: usoilthdr=44
+            integer, parameter,optional :: maxdate=400
+            integer, parameter,optional :: jcone=1
+            real, parameter,optional :: tcorg=0.25
+            integer, parameter,optional :: maxstp=10000
+            integer, parameter,optional :: maxsp=10
+            real, parameter,optional :: tol=0.02
+            integer, parameter,optional :: uwatupthdr=46
+            real, parameter,optional :: pi=3.1415927
+            integer, parameter,optional :: uwatday=34
+            real, parameter,optional :: abszero=-273.15
+            integer, parameter,optional :: ustoreyi=23
+            integer, parameter,optional :: ifatal=100
+            real, parameter,optional :: cpquartz=1942000.0
+            integer, parameter,optional :: uhisthdr=40
+            integer, parameter,optional :: maxmet=20
+            integer, parameter,optional :: uhrly=11
+            real, parameter,optional,depend(pi) :: pid180=0.0174532927778
+            integer, parameter,optional :: uresp=20
+            integer, parameter,optional :: uwatupt=32
+            real, parameter,optional :: soilalbedo=0.15
+            real, parameter,optional :: tch2o=0.594
+            integer, parameter,optional :: usoilt=30
+            integer, parameter,optional :: maxday=900
+            integer, parameter,optional :: uerror=12
+            real, parameter,optional :: solarc=1370
+            integer, parameter,optional :: ucontrol=1
+            real, parameter,optional,depend(pi) :: pid2=1.57079635
+            integer, parameter,optional :: iwarn=200
+            integer, parameter,optional :: ustr=3
+            integer, parameter,optional :: uwattest=31
+            real, parameter,optional :: grav=9.8067
+            integer, parameter,optional :: itest=1
+            real :: hhrs
+            integer, parameter,optional :: uresphrhdr=41
+            integer, parameter,optional :: uwatbalhdr=42
+            character(len=3), parameter,optional :: format_binary='bin'
+            integer, parameter,optional :: uwatlayhdr=43
+            integer, parameter,optional :: upt=14
+            integer, parameter,optional :: ulay=13
+            real, parameter,optional :: tau=0.76
+            real, parameter,optional,depend(pi) :: twopi=6.2831854
+            real, parameter,optional :: h2omw=0.018
+            integer, parameter,optional :: udaily=10
+            integer, parameter,optional :: inormal=0
+            real, parameter,optional :: freeze=273.15
+            real :: sperhr
+            real, parameter,optional :: tiny=1e-30
+            real, parameter,optional :: h2olv0=2501000.0
+            integer, parameter,optional :: uwattesthdr=45
+            integer, parameter,optional :: ustoreyo=24
+            integer, parameter,optional :: jpara=3
+            integer, parameter,optional :: stdout_bn=6
+            real, parameter,optional :: emleaf=0.95
+            real, parameter,optional :: gbhgbc=1.32
+            real, parameter,optional :: gcpermol=12.0
+            real, parameter,optional :: gbvgbh=1.075
+            integer, parameter,optional :: stdin_bn=5
+            integer, parameter,optional :: umet=36
+            integer, parameter,optional :: maxp=10000
+            integer, parameter,optional :: upointso=22
+            integer :: khrs
+            integer, parameter,optional :: upointsi=21
+            integer, parameter,optional :: maxt=10000
+            integer, parameter,optional :: uparus=33
+            real, parameter,optional :: cpair=1010.0
+            integer, parameter,optional :: kmaxx=200
+            integer, parameter,optional :: maxc=3
+            real, parameter,optional :: cph2o=4186000.0
+            integer, parameter,optional :: maxd=13
+            integer, parameter,optional :: uwatdayhdr=47
+            real, parameter,optional :: fpar=0.5
+            integer, parameter,optional :: usunla=49
+            real, parameter,optional :: vonkarman=0.41
+            integer, parameter,optional :: uwatlay=29
+            integer, parameter,optional :: jbox=6
+            integer, parameter,optional :: jhelip=2
+            integer, parameter,optional :: uspto=25
+            real, parameter,optional :: patm=101250.0
+            integer, parameter,optional :: jfelip=4
+            integer, parameter,optional :: utday=16
+            integer, parameter,optional :: maxlay=15
+            integer, parameter,optional :: uwatpars=28
+            real, parameter,optional :: defwind=2.5
+            real, parameter,optional :: airma=0.029
+            integer, parameter,optional :: maxhisto=200
+            integer, parameter,optional :: jcyl=5
+            real, parameter,optional :: alphaq=0.425
+            real, parameter,optional :: umolperj=4.57
+            integer, parameter,optional :: ulayhdr=39
+            integer, parameter,optional :: utcon=18
+            character(len=3), parameter,optional :: format_ascii='asc'
+            integer, parameter,optional :: uhist=15
+            real, parameter,optional :: rconst=8.314
+            integer, parameter,optional :: uresphr=26
+            integer, parameter,optional :: uresphdr=48
+            real, parameter,optional :: sigma=5.67e-08
+            integer, parameter,optional :: uthist=19
+            real, parameter,optional :: dheat=2.15e-05
+        end module maestcom
+    end interface 
+end python module maestcom
+
+! This file was auto-generated with f2py (version:2).
+! See http://cens.ioc.ee/projects/f2py2e/
