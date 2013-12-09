@@ -1,54 +1,39 @@
-getmet.f90:90.3:
-
-991   FORMAT (A12,A60) ! For writing comments to output files.
-   1
-Warning: Label 991 at (1) defined but not used
-getmet.f90:189.13:
-
-        IF ((CAK.EQ.0).AND.(METCOLS(MDCA).EQ.MISSING)) &
-             1
-Warning: Equality comparison for REAL(4) at (1)
-getmet.f90:240.13:
-
-        IF ((CAK.EQ.0).AND.(METCOLS(MHCA).EQ.MISSING)) &
-             1
-Warning: Equality comparison for REAL(4) at (1)
-getmet.f90:1501.10:
+getmet.f90:1500.10:
 
       IF (TINC.NE.0.0) THEN
           1
 Warning: Inequality comparison for REAL(4) at (1)
-getmet.f90:1572.10:
+getmet.f90:1571.10:
 
       IF (TOTC.NE.0.0) THEN
           1
 Warning: Inequality comparison for REAL(4) at (1)
-getmet.f90:618.23:
+getmet.f90:617.23:
 
     REAL ETMEAS(MAXHRS)
                        1
 Warning: Unused variable 'etmeas' declared at (1)
-getmet.f90:613.26:
+getmet.f90:612.26:
 
     INTEGER IDATES(MAXHRS),IDATE
                           1
 Warning: Unused variable 'idates' declared at (1)
-getmet.f90:612.47:
+getmet.f90:611.47:
 
     INTEGER METCOLS(MAXMET),SOILDATA, TSOILDATA
                                                1
 Warning: Unused variable 'tsoildata' declared at (1)
-getmet.f90:1295.12:
+getmet.f90:1294.12:
 
     REAL TMP,EA,EMCLEAR,EMSKY
             1
 Warning: Unused variable 'tmp' declared at (1)
-getmet.f90:456.46:
+getmet.f90:455.46:
 
     INTEGER METCOLS(MAXMET),SOILDATA,TSOILDATA,IOERROR,I,NOMETCOLS
                                               1
 Warning: Unused variable 'tsoildata' declared at (1)
-getmet.f90:884.18:
+getmet.f90:883.18:
 
     REAL(4) RANVAL
                   1
@@ -58,33 +43,33 @@ getmet.f90:82.66:
     INTEGER METCOLS(MAXMET),KHRSPERDAY,NOCOLUMNS,IOERROR,USEMEASET
                                                                   1
 Warning: Unused variable 'usemeaset' declared at (1)
-getmet.f90:418.55:
+getmet.f90:417.55:
 
     REAL PPT(MAXHRS), SOILMOIST(MAXHRS), ETMEAS(MAXHRS)
                                                        1
 Warning: Unused variable 'etmeas' declared at (1)
-getmet.f90:420.46:
+getmet.f90:419.46:
 
     INTEGER METCOLS(MAXMET),SOILDATA,TSOILDATA,MFLAG,IDATE,NOMETCOLS
                                               1
 Warning: Unused variable 'tsoildata' declared at (1)
-getmet.f90:1560.12:
+getmet.f90:1559.12:
 
     REAL ZEN
             1
 Warning: Unused variable 'zen' declared at (1)
-getmet.f90:1582.35:
+getmet.f90:1581.35:
 
       REAL FUNCTION CALCFBMWN(IDATE,IHR,ZEN,RADABV)
                                    1
 Warning: Unused dummy argument 'idate' at (1)
-getmet.f90:1582.39:
+getmet.f90:1581.39:
 
       REAL FUNCTION CALCFBMWN(IDATE,IHR,ZEN,RADABV)
                                        1
 Warning: Unused dummy argument 'ihr' at (1)
 getmet.f90: In function 'getmetday':
-getmet.f90:579:0: warning: 'smd' may be used uninitialized in this function [-Wmaybe-uninitialized]
+getmet.f90:578:0: warning: 'smd' may be used uninitialized in this function [-Wmaybe-uninitialized]
        IF (SMD.GT.SWMAX) THEN
  ^
 inout.f90:427.8:
