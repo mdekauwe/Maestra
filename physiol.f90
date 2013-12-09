@@ -293,7 +293,7 @@
         ELSE
             VPDG = VPD/1000.0
         ENDIF     
-        GSDIVA = G1 / (CS - GAMMA) / SQRT(VPDG) * FSOIL
+        GSDIVA = (1.0 + (G1 * FSOIL) / SQRT(VPDG)) / CS
         
         ELSE IF (MODELGS.EQ.5) THEN
 ! Three-parameter Ball-Berry
