@@ -185,10 +185,9 @@
          IFATAL,0)
         IF ((METCOLS(MDPAR).EQ.MISSING).AND.(METCOLS(MDSI).EQ.MISSING)) &
           CALL READDELTAT(UMET,DELTAT,IOERROR)
-        IF ((CAK.EQ.0).AND.(METCOLS(MDCA).EQ.MISSING)) &
+        IF ((fabs(CAK - 0.0) < 0.00001).AND.(METCOLS(MDCA).EQ.MISSING)) &
           CALL SUBERROR('ERROR: NO VALUE FOR CA IN MET FILE', &
           IFATAL,0)
-
       ELSE                 ! Hourly values
         DO 30 I = 1,NOCOLUMNS
           ICOL = MISSING
