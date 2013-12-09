@@ -2601,7 +2601,7 @@
       RTEMPR = 0.0      ! Default temp at which maint resp specified
       Q10R = 0.0        ! Missing value - will cause error if RM spec
       READ (UFILE,RRESP,IOSTAT = IOERROR)
-      IF ((RMCR.EQ.0.0).AND.(RMFR.EQ.0.0)) THEN
+      IF ((RMCR.EQ.0.0).AND.(abs(RMFR - 0.0) < 0.00001)) THEN
         CALL SUBERROR('WARNING: ROOT MAINT RESP NOT CALCULATED', &
         IWARN,IOERROR)
       ELSE IF (Q10R.EQ.0.0) THEN
