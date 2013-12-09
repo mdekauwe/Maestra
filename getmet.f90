@@ -87,7 +87,6 @@
     CHARACTER*80 MTITLE
 
 990   FORMAT (A60)     ! For reading titles in input files.
-991   FORMAT (A12,A60) ! For writing comments to output files.
 
 ! Open input file with met data
       OPEN (UMET, FILE = 'met.dat', STATUS='OLD')
