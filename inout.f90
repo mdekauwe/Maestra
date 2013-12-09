@@ -423,8 +423,7 @@
 609   FORMAT('Rgb: Branch growth resp.          mol m-2 d-1')
 610   FORMAT('Rgcr: Coarse root growth resp.    mol m-2 d-1')
 611   FORMAT('Rgfr: Fine root growth resp.      mol m-2 d-1')
-612   FORMAT('Columns: DOY, Tree, Rmf, Rmw, Rmb, Rmcr, Rmfr, Rgf, Rgw,  &
-        Rgb, Rgcr, Rgfr')
+612   FORMAT('Columns: DOY, Tree, Rmf, Rmw, Rmb, Rmcr, Rmfr, Rgf, Rgw, Rgb, Rgcr, Rgfr')
 
 301   FORMAT('Hourly maintenance respiration components')
 302   FORMAT('Rmf: Foliage maintenance resp.    umol m-2 s-1')
@@ -1765,7 +1764,7 @@
 ! If the first coefficient of the first age class = 0, or
         IF ((BPT(1,1).EQ.0.0).OR. &
 ! If there's >1 age class and the first coefft of the second age class = 0
-            ((NOAGEC.GT.1).AND.(BPT(1,2).EQ.0.0))) THEN
+            ((NOAGEC.GT.1).AND.(abs(BPT(1,2) - 0.0) < 0.00001))) THEN
           CALL SUBERROR( &
           'ERROR: MISSING BETA FUNCTION COEFFICIENTS', &
           IFATAL,IOERROR)

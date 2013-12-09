@@ -1,34 +1,19 @@
-getmet.f90:1499.10:
+getmet.f90:1498.10:
 
       IF (TINC.NE.0.0) THEN
           1
 Warning: Inequality comparison for REAL(4) at (1)
-getmet.f90:1570.10:
+getmet.f90:1568.10:
 
       IF (TOTC.NE.0.0) THEN
           1
 Warning: Inequality comparison for REAL(4) at (1)
-getmet.f90:882.18:
-
-    REAL(4) RANVAL
-                  1
-Warning: Unused variable 'ranval' declared at (1)
-getmet.f90:82.66:
-
-    INTEGER METCOLS(MAXMET),KHRSPERDAY,NOCOLUMNS,IOERROR,USEMEASET
-                                                                  1
-Warning: Unused variable 'usemeaset' declared at (1)
-getmet.f90:1558.12:
-
-    REAL ZEN
-            1
-Warning: Unused variable 'zen' declared at (1)
-getmet.f90:1580.35:
+getmet.f90:1578.35:
 
       REAL FUNCTION CALCFBMWN(IDATE,IHR,ZEN,RADABV)
                                    1
 Warning: Unused dummy argument 'idate' at (1)
-getmet.f90:1580.39:
+getmet.f90:1578.39:
 
       REAL FUNCTION CALCFBMWN(IDATE,IHR,ZEN,RADABV)
                                        1
@@ -37,187 +22,182 @@ getmet.f90: In function 'getmetday':
 getmet.f90:578:0: warning: 'smd' may be used uninitialized in this function [-Wmaybe-uninitialized]
        IF (SMD.GT.SWMAX) THEN
  ^
-inout.f90:427.8:
-
-        Rgb, Rgcr, Rgfr')
-        1
-Warning: Missing '&' in continued character constant at (1)
-inout.f90:1239.7:
+inout.f90:1238.7:
 
        ALL SET TO SPECIES 1', IWARN,IOERROR)
        1
 Warning: Missing '&' in continued character constant at (1)
-inout.f90:1245.7:
+inout.f90:1244.7:
 
        ALL SET TO SPECIES 1', IWARN,IOERROR)
        1
 Warning: Missing '&' in continued character constant at (1)
-inout.f90:3713.16:
+inout.f90:3712.16:
 
                 FIX POINTS.DAT IF INFINITE LOOP OCCURS!', IWARN, -1)
                 1
 Warning: Missing '&' in continued character constant at (1)
-inout.f90:927.10:
+inout.f90:926.10:
 
       IF (ELP.NE.1) THEN
           1
 Warning: Inequality comparison for REAL(4) at (1)
-inout.f90:1768.32:
+inout.f90:1767.32:
 
             ((NOAGEC.GT.1).AND.(BPT(1,2).EQ.0.0))) THEN
                                 1
 Warning: Equality comparison for REAL(4) at (1)
-inout.f90:1766.13:
+inout.f90:1765.13:
 
         IF ((BPT(1,1).EQ.0.0).OR. &
              1
 Warning: Equality comparison for REAL(4) at (1)
-inout.f90:2605.29:
+inout.f90:2604.29:
 
       IF ((RMCR.EQ.0.0).AND.(RMFR.EQ.0.0)) THEN
                              1
 Warning: Equality comparison for REAL(4) at (1)
-inout.f90:2605.11:
+inout.f90:2604.11:
 
       IF ((RMCR.EQ.0.0).AND.(RMFR.EQ.0.0)) THEN
            1
 Warning: Equality comparison for REAL(4) at (1)
-inout.f90:2608.15:
+inout.f90:2607.15:
 
       ELSE IF (Q10R.EQ.0.0) THEN
                1
 Warning: Equality comparison for REAL(4) at (1)
-inout.f90:2637.10:
+inout.f90:2636.10:
 
       IF (RMB.EQ.0.0) THEN
           1
 Warning: Equality comparison for REAL(4) at (1)
-inout.f90:2640.15:
+inout.f90:2639.15:
 
       ELSE IF (Q10B.EQ.0.0) THEN
                1
 Warning: Equality comparison for REAL(4) at (1)
-inout.f90:1957.3:
+inout.f90:1956.3:
 
 100   FORMAT(10(1X,F8.3))
    1
 Warning: Label 100 at (1) defined but not used
-inout.f90:2853.3:
+inout.f90:2852.3:
 
 100   FORMAT(4(1X,F8.3))
    1
 Warning: Label 100 at (1) defined but not used
-inout.f90:2513.10:
+inout.f90:2512.10:
 
       IF (Q10FTABLE(1).EQ.0.0) &
           1
 Warning: Equality comparison for REAL(4) at (1)
-inout.f90:2553.10:
+inout.f90:2552.10:
 
       IF (EFFY.EQ.0.0) &
           1
 Warning: Equality comparison for REAL(4) at (1)
-inout.f90:2556.43:
+inout.f90:2555.43:
 
       IF ((MODELRW.NE.1).AND.RM.EQ.0.0.AND.RMA.EQ.0.0) THEN
                                            1
 Warning: Equality comparison for REAL(4) at (1)
-inout.f90:2556.29:
+inout.f90:2555.29:
 
       IF ((MODELRW.NE.1).AND.RM.EQ.0.0.AND.RMA.EQ.0.0) THEN
                              1
 Warning: Equality comparison for REAL(4) at (1)
-inout.f90:2559.15:
+inout.f90:2558.15:
 
       ELSE IF (Q10WTABLE(1).EQ.0.0) THEN
                1
 Warning: Equality comparison for REAL(4) at (1)
-inout.f90:2580.10:
+inout.f90:2579.10:
 
       IF (RM.EQ.0.0.AND.RMA.GT.0.0) MODELRW = 2
           1
 Warning: Equality comparison for REAL(4) at (1)
-inout.f90:1270.29:
+inout.f90:1269.29:
 
       IF ((IOERROR.NE.0).OR.(Z0HT.EQ.0.0)) THEN
                              1
 Warning: Equality comparison for REAL(4) at (1)
-inout.f90:776.9:
+inout.f90:775.9:
 
       IF(R2(1,1).EQ.0.0)THEN
          1
 Warning: Equality comparison for REAL(4) at (1)
-inout.f90:3721.3:
+inout.f90:3720.3:
 
 992   FORMAT (1X,3(A3,1X),9(A12,1X))
    1
 Warning: Label 992 at (1) defined but not used
-inout.f90:3102.20:
+inout.f90:3101.20:
 
     REAL THRESH_FOLT
                     1
 Warning: Unused variable 'thresh_folt' declared at (1)
-inout.f90:3377.17:
+inout.f90:3376.17:
 
     INTEGER ITREE, INDEX, NOTREES,IDATE,IDAY,ISTART
                  1
 Warning: Unused variable 'itree' declared at (1)
-inout.f90:3366.70:
+inout.f90:3365.70:
 
 SUBROUTINE TREEINTERP2(IDAY,ISTART,NODATES,IDATEARR,PARAMTABLE,NOTREES,PARAMS)
                                                                       1
 Warning: Unused dummy argument 'notrees' at (1)
-inout.f90:2742.37:
+inout.f90:2741.37:
 
     INTEGER IDATEARR(maxdate),IOERROR,NODATES,IDATE
                                      1
 Warning: Unused variable 'ioerror' declared at (1)
-inout.f90:850.29:
+inout.f90:849.29:
 
        X,Y,NOALLTREES,NOTREES, &
                              1
 Warning: Unused dummy argument 'notrees' at (1)
-inout.f90:2884.18:
+inout.f90:2883.18:
 
     REAL(4) RANVAL
                   1
 Warning: Unused variable 'ranval' declared at (1)
-inout.f90:2885.41:
+inout.f90:2884.41:
 
     REAL DX(MAXT),DY(MAXT),WEIGHTSI(MAXT),WEIGHTS(MAXT)
                                          1
 Warning: Unused variable 'weightsi' declared at (1)
-inout.f90:3292.24:
+inout.f90:3291.24:
 
     REAL TOTLAI(MAXDATE)
                         1
 Warning: Unused variable 'totlai' declared at (1)
-inout.f90:2467.13:
+inout.f90:2466.13:
 
     REAL K10F,Q10F,RTEMP,TBELOW,DAYRESP,EFFYRF,RDA,RDB
              1
 Warning: Unused variable 'k10f' declared at (1)
-inout.f90:2468.14:
+inout.f90:2467.14:
 
     REAL K10FI,RTEMPI,DAYRESPI,EFFYRFI,TBELOWI
               1
 Warning: Unused variable 'k10fi' declared at (1)
-inout.f90:1975.50:
+inout.f90:1974.50:
 
     INTEGER UFILE,NODATES,MODELGS,NSIDES,NSIDESI,I
                                                   1
 Warning: Unused variable 'i' declared at (1)
-inout.f90:1976.53:
+inout.f90:1975.53:
 
     INTEGER DATESGSI(maxdate),IOERROR,IDATE,NOGSDATES
                                                      1
 Warning: Unused variable 'nogsdates' declared at (1)
-inout.f90:1302.21:
+inout.f90:1301.21:
 
     LOGICAL SHAPEREAD
                      1
 Warning: Unused variable 'shaperead' declared at (1)
-inout.f90:1476.56:
+inout.f90:1475.56:
 
       SUBROUTINE READSPECIES(UFILE,NSPECIES,SPECIESNAMES, &
                                                         1
@@ -272,142 +252,142 @@ inout.f90:196.35:
       CHARACTER*180 PTITLEM,STITLEM
                                    1
 Warning: Unused variable 'stitlem' declared at (1)
-inout.f90:486.32:
+inout.f90:485.32:
 
     INTEGER IOTC,IOHIST,IWATFILE,ICC
                                 1
 Warning: Unused variable 'iwatfile' declared at (1)
-inout.f90:484.53:
+inout.f90:483.53:
 
     INTEGER PPLAY,ISTART,IEND,NSTEP,NUMPNT,NOLAY,PPLY,NZEN,NAZ,MODELGS
                                                      1
 Warning: Unused variable 'pply' declared at (1)
-inout.f90:596.43:
+inout.f90:595.43:
 
        GSJA,GSJB,T0,TREF,TMAX,SMD1,SMD2,WC1, WC2, SWPEXP, &
                                            1
 Warning: Unused dummy argument 'wc1' at (1)
-inout.f90:596.48:
+inout.f90:595.48:
 
        GSJA,GSJB,T0,TREF,TMAX,SMD1,SMD2,WC1, WC2, SWPEXP, &
                                                 1
 Warning: Unused dummy argument 'wc2' at (1)
-inout.f90:753.67:
+inout.f90:752.67:
 
     REAL DX(MAXT),DY(MAXT),DZ(MAXT),WEIGHTS(MAXT), EXPFACTORS(MAXT)
                                                                    1
 Warning: Unused variable 'expfactors' declared at (1)
-inout.f90:747.19:
+inout.f90:746.19:
 
     INTEGER IOERROR
                    1
 Warning: Unused variable 'ioerror' declared at (1)
-inout.f90:753.49:
+inout.f90:752.49:
 
     REAL DX(MAXT),DY(MAXT),DZ(MAXT),WEIGHTS(MAXT), EXPFACTORS(MAXT)
                                                  1
 Warning: Unused variable 'weights' declared at (1)
-inout.f90:824.20:
+inout.f90:823.20:
 
     INTEGER IT(MAXT),ISPECIES(MAXT),ISPECIEST(MAXT)
                     1
 Warning: Unused variable 'it' declared at (1)
-inout.f90:1048.41:
+inout.f90:1047.41:
 
     INTEGER ITARGETS(MAXT),ISPECIES(MAXT),IOHRLY
                                          1
 Warning: Unused variable 'ispecies' declared at (1)
-inout.f90:1047.37:
+inout.f90:1046.37:
 
     INTEGER NOTARGETS,IDAY,IHOUR,ITAR,ITREE,ISPEC,I,NOLAY
                                      1
 Warning: Unused variable 'itar' declared at (1)
-inout.f90:1048.26:
+inout.f90:1047.26:
 
     INTEGER ITARGETS(MAXT),ISPECIES(MAXT),IOHRLY
                           1
 Warning: Unused variable 'itargets' declared at (1)
-inout.f90:1047.21:
+inout.f90:1046.21:
 
     INTEGER NOTARGETS,IDAY,IHOUR,ITAR,ITREE,ISPEC,I,NOLAY
                      1
 Warning: Unused variable 'notargets' declared at (1)
-inout.f90:1056.48:
+inout.f90:1055.48:
 
     REAL FOLLAY(MAXLAY),TCAN(MAXHRS),VPD(MAXHRS),DECOUPL(MAXHRS)
                                                 1
 Warning: Unused variable 'vpd' declared at (1)
-inout.f90:1096.41:
+inout.f90:1095.41:
 
     INTEGER ITARGETS(MAXT),ISPECIES(MAXT)
                                          1
 Warning: Unused variable 'ispecies' declared at (1)
-inout.f90:1095.31:
+inout.f90:1094.31:
 
     INTEGER NOTARGETS,IDAY,ITAR,ITREE,ISPEC
                                1
 Warning: Unused variable 'itar' declared at (1)
-inout.f90:1096.26:
+inout.f90:1095.26:
 
     INTEGER ITARGETS(MAXT),ISPECIES(MAXT)
                           1
 Warning: Unused variable 'itargets' declared at (1)
-inout.f90:1095.21:
+inout.f90:1094.21:
 
     INTEGER NOTARGETS,IDAY,ITAR,ITREE,ISPEC
                      1
 Warning: Unused variable 'notargets' declared at (1)
-inout.f90:1100.34:
+inout.f90:1099.34:
 
     REAL TOTCO2,TOTRESPF,TOTRESPWM
                                   1
 Warning: Unused variable 'totrespwm' declared at (1)
-inout.f90:3428.45:
+inout.f90:3427.45:
 
     INTEGER DATESA(maxdate), DATESGS(maxdate)
                                              1
 Warning: Unused variable 'datesgs' declared at (1)
-inout.f90:3443.11:
+inout.f90:3442.11:
 
     REAL G0,G1,Q10F,Q10W
            1
 Warning: Unused variable 'g0' declared at (1)
-inout.f90:3440.25:
+inout.f90:3439.25:
 
     REAL G0TABLE(maxdate),G1TABLE(maxdate)
                          1
 Warning: Unused variable 'g0table' declared at (1)
-inout.f90:3443.14:
+inout.f90:3442.14:
 
     REAL G0,G1,Q10F,Q10W
               1
 Warning: Unused variable 'g1' declared at (1)
-inout.f90:3440.42:
+inout.f90:3439.42:
 
     REAL G0TABLE(maxdate),G1TABLE(maxdate)
                                           1
 Warning: Unused variable 'g1table' declared at (1)
-inout.f90:3431.59:
+inout.f90:3430.59:
 
     INTEGER NOVDATES,NORDATES,NOSLADATES,NOADATES,NOGSDATES
                                                            1
 Warning: Unused variable 'nogsdates' declared at (1)
-inout.f90:3489.53:
+inout.f90:3488.53:
 
     INTEGER NOLADATES,IFLUSH,NEWCANOPY,NODDATES,IHOUR
                                                      1
 Warning: Unused variable 'ihour' declared at (1)
-inout.f90:3495.27:
+inout.f90:3494.27:
 
     REAL TOTLAITMP(MAXDATE)
                            1
 Warning: Unused variable 'totlaitmp' declared at (1)
-inout.f90:3594.32:
+inout.f90:3593.32:
 
     INTEGER UFILE,NOTARGETS,ITAR,IBIN,ITREE
                                 1
 Warning: Unused variable 'itar' declared at (1)
-inout.f90:3594.27:
+inout.f90:3593.27:
 
     INTEGER UFILE,NOTARGETS,ITAR,IBIN,ITREE
                            1
