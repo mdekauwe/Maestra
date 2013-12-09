@@ -831,10 +831,10 @@
 
 ! Zero daily fluxes
       CALL ZEROD(TDYAB,TOTCO2,TOTRESPF,TOTRESPWM, &
-       TOTRESPB,TOTRESPCR,TOTRESPFR,TOTH2O,TOTHFX)
+       TOTRESPB,TOTRESPCR,TOTRESPFR,TOTH2O,TOTHFX,TOTH2OCAN)
 ! Zero hourly fluxes
       CALL ZEROHR(THRAB,FCO2,FRESPF,FRESPW,FRESPB,FRESPFR,FRESPCR, &
-       FH2O,GSCAN,FHEAT,PPAR,PPS,PTRANSP,TCAN,DECOUPL)
+       FH2O,GSCAN,FHEAT,PPAR,PPS,PTRANSP,TCAN,DECOUPL,FH2OCAN)
 
 !**********************************************************************
 ! Begin hourly loop
@@ -1512,8 +1512,8 @@
 !**********************************************************************
       SUBROUTINE ZEROD( &
        TDYAB,TOTCO2,TOTRESPF,TOTRESPWM,TOTRESPB, &
-       TOTRESPCR,TOTRESPFR,TOTH2O,TOTHFX &
-       )
+       TOTRESPCR,TOTRESPFR,TOTH2O,TOTHFX, &
+       TOTH2OCAN)
 ! This is subroutine to set the initial values of daily total variables
 ! to zero.
 !**********************************************************************
@@ -1535,6 +1535,7 @@
       TOTRESPCR = 0.0
       TOTH2O = 0.0
       TOTHFX = 0.0
+      TOTH2OCAN = 0.0
 
       RETURN
       END !ZeroD
@@ -1543,8 +1544,8 @@
 !**********************************************************************
       SUBROUTINE ZEROHR( &
        THRAB, FCO2, FRESPF, FRESPW, FRESPB, FRESPFR, FRESPCR,  &
-       FH2O, GSCAN, FHEAT, PPAR, PPS, PTRANSP, TCAN, DECOUPL &
-       )
+       FH2O, GSCAN, FHEAT, PPAR, PPS, PTRANSP, TCAN, DECOUPL, &
+       FH2OCAN)
 ! This is subroutine to set the initial values of hourly total variables
 ! to zero.
 !**********************************************************************
@@ -1556,7 +1557,7 @@
       REAL FRESPCR(MAXHRS),FRESPFR(MAXHRS),DECOUPL(MAXHRS)
       REAL GSCAN(MAXHRS),FH2O(MAXHRS),FHEAT(MAXHRS)
       REAL PPAR(MAXLAY,KHRS),PPS(MAXLAY,KHRS),PTRANSP(MAXLAY,KHRS)
-
+      REAL FH2OCAN(MAXHRS)
       FCO2 = 0.0
       FRESPF = 0.0
       FRESPW = 0.0
@@ -1572,6 +1573,7 @@
       PPAR = 0.0
       PPS = 0.0
       PTRANSP = 0.0
+      FH2OCAN = 0.0
 
       RETURN
       END !ZeroHr
